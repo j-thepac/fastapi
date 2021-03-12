@@ -24,6 +24,6 @@ steps :
   
  
 
-To Execute
+To Execute :
 
 hypercorn main:app --reload

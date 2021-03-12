@@ -16,14 +16,14 @@ make sure venv is on.
 
 steps :
 
-  cd to the folder containing main.py
+ - cd to the folder containing main.py
   
-  pip install fastapi
+ - pip install fastapi
   
-  pip install hypercorn #server
+ - pip install hypercorn #server
   
  
 
 To Execute :
 
-hypercorn main:app --reload
+- hypercorn main:app --reload

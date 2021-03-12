@@ -15,11 +15,14 @@ pre-req:
 make sure venv is on.
 
 steps :
-  cd to the folder containing main.py
-  pip install fastapi
-  pip install hypercorn #server
- 
 
+  cd to the folder containing main.py
+  
+  pip install fastapi
+  
+  pip install hypercorn #server
+  
+ 
 
 To Execute
 

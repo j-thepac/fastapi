@@ -2,6 +2,7 @@ FAST API (https://fastapi.tiangolo.com/)
 
 
 Features
+
 1.  Asynchronous
 2.  High Perfromance
 3.  Less Code
@@ -21,4 +22,5 @@ steps :
 
 
 To Execute
+
 hypercorn main:app --reload

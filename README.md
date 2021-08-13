@@ -1,7 +1,7 @@
-FAST API (https://fastapi.tiangolo.com/)
+# FAST API (https://fastapi.tiangolo.com/)
 
 
-Features
+## Features
 
 1.  Asynchronous
 2.  High Perfromance
@@ -11,19 +11,32 @@ Features
     - swagger (/docs)
     - ReDoc   (/redoc)
 
-pre-req:
+## pre-req:
 make sure venv is on.
 
-steps :
+## steps :
 
  - cd to the folder containing main.py
   
  - pip install fastapi
   
- - pip install hypercorn #server
+ - pip install uvicorn #server
   
  
 
-To Execute :
+## To Execute :
+- uvicorn main:app --reload --host 0.0.0.0 --port 5000
 
-- hypercorn main:app --reload
+## requirements.txt
+fastapi
+uvicorn
+
+
+## dockerfile
+FROM python:3.8-slim
+COPY $PWD /home/app
+WORKDIR /home/app
+RUN pip install -r requirements.txt
+CMD uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
+

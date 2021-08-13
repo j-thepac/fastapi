@@ -29,6 +29,7 @@ make sure venv is on.
 
 ## requirements.txt
 fastapi
+
 uvicorn
 
 
